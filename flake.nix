@@ -8,7 +8,9 @@
       let pkgs = nixpkgs.legacyPackages.${system}; in
       {
         devShell = pkgs.mkShell {
+          env = { LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [pkgs.libuuid]; }; 
           buildInputs = with pkgs; [
+            libuuid
             nodejs
             nodePackages_latest.pnpm
             nodePackages_latest.typescript-language-server

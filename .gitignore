@@ -1,2 +1,7 @@
+.direnv
 node_modules
 dist
+
+# badbutton video and frames aren't included in order to not make the repo have several thousand files
+scripts/badbutton/bad.mp4
+scripts/badbutton/frames

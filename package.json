@@ -2,6 +2,7 @@
   "name": "vite-template-solid",
   "version": "0.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -11,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "@iconify-json/ph": "^1.1.9",
+    "@types/node": "^20.10.6",
     "@unocss/preset-mini": "^0.53.6",
     "@unocss/transformer-directives": "^0.58.2",
     "@unocss/vite": "^0.53.6",
@@ -25,5 +27,8 @@
     "gl-matrix": "^3.4.3",
     "solid-js": "^1.8.7",
     "vite-plugin-inline-css-modules": "^0.0.7"
+  },
+  "optionalDependencies": {
+    "canvas": "^2.11.2"
   }
 }
