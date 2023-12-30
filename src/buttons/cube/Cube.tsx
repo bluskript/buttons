@@ -48,11 +48,9 @@ const CubeButton: Component = () => {
   };
 
   return (
-    <div class="w-full flex flex-col gap-4">
-      <button ref={button} class="bg-blue-400" onClick={onClick}>
-        Cubeeee!!
-      </button>
-    </div>
+    <button ref={button} class="bg-yellow-400" onClick={onClick}>
+      Cubeeee!!
+    </button>
   );
 };
 

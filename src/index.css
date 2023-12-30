@@ -1,0 +1,7 @@
+button {
+	@apply outline-none border-none p-2;
+}
+
+html, body {
+	@apply w-full h-full;
+}
