@@ -1,0 +1,7 @@
+button {
+	@apply text-white bg-emerald-500 px-2 py-2;
+
+	&:hover {
+		@apply bg-emerald-800;
+	}
+}

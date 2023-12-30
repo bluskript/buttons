@@ -12,3 +12,4 @@ export const vanillaButton = (handler: (button: HTMLButtonElement) => any) => {
 		);
 	}
 }
+

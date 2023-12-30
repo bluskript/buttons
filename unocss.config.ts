@@ -1,6 +1,8 @@
-import { defineConfig } from '@unocss/vite';
-import { presetMini } from '@unocss/preset-mini';
+import { defineConfig, presetMini, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   presets: [presetMini()],
+  transformers: [
+    transformerDirectives(),
+  ]
 });
