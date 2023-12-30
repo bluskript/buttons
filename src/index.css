@@ -1,7 +1,24 @@
 button {
-	@apply outline-none border-none p-2;
+  @apply outline-none border-none p-2;
 }
 
-html, body {
-	@apply w-full h-full;
+* {
+	transition: color 200ms linear;
+}
+
+html,
+body {
+  @apply w-full h-full dark p-0 m-0;
+}
+
+.dark {
+  @apply bg-dark-9;
+}
+
+:where(.dark) button {
+  @apply bg-dark-4 text-white;
+
+  &:hover {
+    @apply bg-dark-2;
+  }
 }

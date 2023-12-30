@@ -10,12 +10,14 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@iconify-json/ph": "^1.1.9",
     "@unocss/preset-mini": "^0.53.6",
     "@unocss/transformer-directives": "^0.58.2",
     "@unocss/vite": "^0.53.6",
     "solid-devtools": "^0.27.9",
     "typescript": "^5.3.3",
     "unocss": "^0.58.2",
+    "unplugin-icons": "^0.18.1",
     "vite": "^4.5.1",
     "vite-plugin-solid": "^2.8.0"
   },
