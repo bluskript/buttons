@@ -32,7 +32,7 @@ const BadButton: Component = () => {
             if (typeof pixels == 'undefined') return clearInterval(interval);
 
             for (let i = 0; i < loops; i++) {
-                badbuttons[i].disabled = pixels[i] == 1 ? true : false;
+                badbuttons[i].disabled = pixels[i] == 0 ? true : false;
             }
         }, 1000 / 30); // 30 fps
     };
