@@ -25,7 +25,7 @@ const CubeButton: Component = () => {
     ).map((x) => vec3.fromValues(...x)),
   );
   let [r, setR] = createSignal(0);
-  const rotated = () => rotate(values(), 0, 0, r());
+  const rotated = () => rotate(values(), r(), r() * 0.1, 0);
   const projected = () => projectPoints(rotated(), r());
   let button: HTMLButtonElement;
   const onClick = () => {

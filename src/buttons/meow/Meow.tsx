@@ -2,16 +2,20 @@ import { Component, onMount } from "solid-js";
 import meowUrl from "./meow.mp3";
 
 const MeowButton: Component = () => {
-  let button: HTMLButtonElement;
-  onMount(() => {
-    button.addEventListener("click", () => new Audio(meowUrl).play());
-  });
+  const onClick = () => {
+    const buttons = Array.from(document.querySelectorAll("button"));
+    buttons.forEach((b) =>
+      b.addEventListener("mousedown", () =>
+        setTimeout(() => new Audio(meowUrl).play(), Math.random() * 300),
+      ),
+    );
+  };
 
   return (
-    <button ref={button} class="bg-blue-400">
+    <button onClick={onClick} class="bg-blue-400">
       Meow
     </button>
   );
 };
 
-export default MeowButton
+export default MeowButton;
