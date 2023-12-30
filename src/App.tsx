@@ -1,20 +1,6 @@
 import { onMount, type Component } from "solid-js";
-import meowUrl from "./meow.mp3";
-import { css } from "vite-plugin-inline-css-modules";
-import BuwompButton from "./buwomp/Buwomp";
-
-const MeowButton: Component = () => {
-  let button: HTMLButtonElement;
-  onMount(() => {
-    button.addEventListener("click", () => new Audio(meowUrl).play());
-  });
-
-  return (
-    <button ref={button} class="bg-blue-400">
-      Meow
-    </button>
-  );
-};
+import BuwompButton from "./buttons/buwomp/Buwomp";
+import MeowButton from "./buttons/meow/Meow";
 
 const App: Component = () => {
   return (
