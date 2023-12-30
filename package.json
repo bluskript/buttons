@@ -20,6 +20,7 @@
     "vite-plugin-solid": "^2.8.0"
   },
   "dependencies": {
+    "gl-matrix": "^3.4.3",
     "solid-js": "^1.8.7",
     "vite-plugin-inline-css-modules": "^0.0.7"
   }

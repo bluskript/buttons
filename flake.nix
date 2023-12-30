@@ -9,9 +9,10 @@
       {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
-            nodePackages_latest.pnpm
             nodejs
+            nodePackages_latest.pnpm
             nodePackages_latest.typescript-language-server
+            nodePackages_latest.prettier
           ];
         };
       }

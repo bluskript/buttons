@@ -5,10 +5,16 @@ import CubeButton from "./buttons/cube/Cube";
 
 const App: Component = () => {
   return (
-    <div class="flex gap-2 flex-wrap p-2">
+    <div class="p-2">
       <MeowButton />
       <BuwompButton />
       <CubeButton />
+      <button>meow</button>
+      <button>meow</button>
+      <button>meow</button>
+      <button>meow</button>
+      <button>meow</button>
+      <button>meow</button>
     </div>
   );
 };

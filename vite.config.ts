@@ -6,8 +6,8 @@ import inlineCssModules from 'vite-plugin-inline-css-modules'
 
 export default defineConfig({
   plugins: [
-    solidPlugin(),
     UnocssPlugin({}),
+    solidPlugin(),
     inlineCssModules(),
   ],
   server: {
