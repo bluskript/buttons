@@ -7,6 +7,7 @@ import BadButton from "./buttons/badbutton/BadButton";
 import ImpulseButton from "./buttons/impulse/Impulse";
 import YesButton from "./buttons/yes/Yes";
 import NestingButton from "./buttons/nesting/Nesting";
+import VoltraButton from "./buttons/musik/Musik";
 
 export const ButtonList = () => (
   <>
@@ -17,6 +18,7 @@ export const ButtonList = () => (
     <ImpulseButton />
     <YesButton />
     <NestingButton />
+    <VoltraButton />
     <br />
     <BadButton />
   </>
