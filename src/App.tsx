@@ -6,20 +6,27 @@ import DarkModeButton from "./buttons/darkmode/DarkMode";
 import BadButton from "./buttons/badbutton/BadButton";
 import ImpulseButton from "./buttons/impulse/Impulse";
 import YesButton from "./buttons/yes/Yes";
+import NestingButton from "./buttons/nesting/Nesting";
+
+export const ButtonList = () => (
+  <>
+    <MeowButton />
+    <BuwompButton />
+    <CubeButton />
+    <DarkModeButton />
+    <ImpulseButton />
+    <YesButton />
+    <NestingButton />
+    <br />
+    <BadButton />
+  </>
+);
 
 const App: Component = () => {
   return (
     <div class="w-full h-full flex items-center justify-center">
       <div class="p-2 bg-light-500 dark:bg-dark-800 min-h-80">
-        <MeowButton />
-        <BuwompButton />
-        <CubeButton />
-        <DarkModeButton />
-        <ImpulseButton />
-        <YesButton />
-        <button>meow</button>
-        <br />
-        <BadButton />
+        <ButtonList />
       </div>
     </div>
   );
