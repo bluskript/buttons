@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@solid-primitives/mouse':
+    specifier: ^2.0.16
+    version: 2.0.16(solid-js@1.8.7)
   gl-matrix:
     specifier: ^3.4.3
     version: 3.4.3
@@ -768,7 +771,6 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.1(solid-js@1.8.7)
       solid-js: 1.8.7
-    dev: true
 
   /@solid-primitives/keyboard@1.2.5(solid-js@1.8.7):
     resolution: {integrity: sha512-1axfWM1T4ASzZp4D91vLtxARevlBuOQ6yFHr1/IkuM/7OhMLo/BrO2CcDu3vSwCPVOSiZ2P875bTiqVWQV6e5g==}
@@ -792,6 +794,18 @@ packages:
       '@solid-primitives/utils': 6.2.1(solid-js@1.8.7)
       solid-js: 1.8.7
     dev: true
+
+  /@solid-primitives/mouse@2.0.16(solid-js@1.8.7):
+    resolution: {integrity: sha512-/TuguoUt4Vvz6CgWB9yscg/+mnSy57UAdLiFYeeD1bOXQ2BD4OI3hj4USPtG58+NgQ2PT27lYfAuuUbw7i1esA==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      '@solid-primitives/event-listener': 2.3.0(solid-js@1.8.7)
+      '@solid-primitives/rootless': 1.4.2(solid-js@1.8.7)
+      '@solid-primitives/static-store': 0.0.5(solid-js@1.8.7)
+      '@solid-primitives/utils': 6.2.1(solid-js@1.8.7)
+      solid-js: 1.8.7
+    dev: false
 
   /@solid-primitives/platform@0.0.105(solid-js@1.8.7):
     resolution: {integrity: sha512-GULqmMc5vNsLSsIxIEYYxJv/6ypGKG+ig9hzSi4lxVPfooX6Go6txDlhv53woUSvaG939ceZGRq+X5uADMed6g==}
@@ -829,7 +843,6 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.1(solid-js@1.8.7)
       solid-js: 1.8.7
-    dev: true
 
   /@solid-primitives/scheduled@1.4.1(solid-js@1.8.7):
     resolution: {integrity: sha512-OLcNXwYpX7HUOEqNPcmR31dkyI1E2imkMDBRlqsGT0ZhJV1L2g0TEREpo4nm/kUhh8LVQzkfnxS+GONx9kh90A==}
@@ -855,7 +868,6 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.1(solid-js@1.8.7)
       solid-js: 1.8.7
-    dev: true
 
   /@solid-primitives/styles@0.0.110(solid-js@1.8.7):
     resolution: {integrity: sha512-PSaM1Rl4+zwpOfxil8KlY87UC+R1rQy8b2EiCMjgTWakRK1TjvFM78KY5/ohFg42bp2V/DWRx2QaL/Unjm3HMg==}
@@ -873,7 +885,6 @@ packages:
       solid-js: ^1.6.12
     dependencies:
       solid-js: 1.8.7
-    dev: true
 
   /@types/babel__core@7.20.5:
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}

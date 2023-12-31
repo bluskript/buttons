@@ -7,7 +7,8 @@ button {
 }
 
 html,
-body {
+body,
+#root {
   @apply w-full h-full dark p-0 m-0;
 }
 
