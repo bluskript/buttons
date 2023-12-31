@@ -8,6 +8,7 @@ import ImpulseButton from "./buttons/impulse/Impulse";
 import YesButton from "./buttons/yes/Yes";
 import NestingButton from "./buttons/nesting/Nesting";
 import VoltraButton from "./buttons/musik/Musik";
+import FlappyButton from "./buttons/flappybutton/FlappyButton";
 
 export const ButtonList = () => (
   <>
@@ -20,6 +21,7 @@ export const ButtonList = () => (
     <NestingButton />
     <VoltraButton />
     <br />
+    <FlappyButton />
     <BadButton />
   </>
 );
