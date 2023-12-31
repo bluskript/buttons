@@ -5,6 +5,7 @@ import CubeButton from "./buttons/cube/Cube";
 import DarkModeButton from "./buttons/darkmode/DarkMode";
 import BadButton from "./buttons/badbutton/BadButton";
 import ImpulseButton from "./buttons/impulse/Impulse";
+import YesButton from "./buttons/yes/Yes";
 
 const App: Component = () => {
   return (
@@ -15,7 +16,7 @@ const App: Component = () => {
         <CubeButton />
         <DarkModeButton />
         <ImpulseButton />
-        <button>meow</button>
+        <YesButton />
         <button>meow</button>
         <br />
         <BadButton />
