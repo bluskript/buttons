@@ -10,6 +10,7 @@ const KaboomButton: Component = () => {
     button.addEventListener("mousedown", () => {
       if (disabled) return;
       disabled = true;
+      video.style.visibility = "visible";
       video.volume = 0.5;
       video.play();
       button.style.visibility = "hidden";
@@ -34,6 +35,7 @@ const KaboomButton: Component = () => {
           position: "absolute",
           top: "0",
           left: "0",
+          visibility: "hidden",
           "object-fit": "contain",
           "object-position": "center",
           "pointer-events": "none",
