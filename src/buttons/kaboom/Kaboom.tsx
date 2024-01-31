@@ -1,20 +1,54 @@
-// import { onMount, type Component } from "solid-js";
+import { onMount, type Component } from "solid-js";
 import kaboomWebmUrl from "./kaboom.webm";
 
-// const kaboomAudio = new Audio(kaboomSndUrl);
+let disabled = false;
+const KaboomButton: Component = () => {
+  let button: HTMLButtonElement;
+  let video: HTMLVideoElement;
 
-// const kaboomVd = document.createElement("video");
-// kaboomVd.src = kaboomAnimUrl;
+  onMount(() => {
+    button.addEventListener("mousedown", () => {
+      if (disabled) return;
+      disabled = true;
+      video.play();
+      button.style.visibility = "hidden";
+      button.disabled = true;
+    });
+  });
 
-// const MeowButton: Component = () => {
-//   let button: HTMLButtonElement;
-//   onMount(() => {
-//     button.addEventListener("mousedown", () => {});
-//   });
+  return (
+    <div
+      style={{
+        display: "inline-block",
+        width: "fit-content",
+        position: "relative",
+      }}
+    >
+      <video
+        preload="auto"
+        src={kaboomWebmUrl}
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          top: "0",
+          left: "0",
+          "object-fit": "contain",
+          "object-position": "center",
+          "pointer-events": "none",
+        }}
+        ref={video}
+      />
+      <button
+        style={{
+          visibility: "visible",
+        }}
+        ref={button}
+      >
+        kaboom
+      </button>
+    </div>
+  );
+};
 
-//   return (
-//     <button ref={button} class="p-4 m-4">
-//       🧨
-//     </button>
-//   );
-// };
+export default KaboomButton;

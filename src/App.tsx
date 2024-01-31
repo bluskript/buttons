@@ -4,6 +4,7 @@ import MeowButton from "./buttons/meow/Meow";
 import CubeButton from "./buttons/cube/Cube";
 import DarkModeButton from "./buttons/darkmode/DarkMode";
 import BadButton from "./buttons/badbutton/BadButton";
+import KaboomButton from "./buttons/kaboom/Kaboom";
 import ImpulseButton from "./buttons/impulse/Impulse";
 import YesButton from "./buttons/yes/Yes";
 import NestingButton from "./buttons/nesting/Nesting";
@@ -17,6 +18,7 @@ export const ButtonList = () => (
     <CubeButton />
     <DarkModeButton />
     <ImpulseButton />
+    <KaboomButton />
     <YesButton />
     <NestingButton />
     <VoltraButton />
